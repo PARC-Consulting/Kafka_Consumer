@@ -1,1 +1,4 @@
-from .core import hmm
+from .core import getWeatherData
+
+
+getWeatherData()
