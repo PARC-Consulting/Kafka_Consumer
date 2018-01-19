@@ -8,11 +8,11 @@ def get_hmm():
     return 'hmmm...'
 
 
-def getWeatherData():
+def getWeatherData(zipcode,country):
     owm = pyowm.OWM('d46d862d143dee6b00df063df2b61cb1')  # You MUST provide a valid API key
 
     # Search for current weather in London (Great Britain)
-    observation = owm.weather_at_zip_code('07030','US')
+    observation = owm.weather_at_zip_code(zipcode,country)
     w = observation.get_weather()
     print(w)                      # <Weather - reference time=2013-12-18 09:20,
 
