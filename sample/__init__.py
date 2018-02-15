@@ -1,4 +1,4 @@
-from core import getWeatherData2
+from core import Consumer
 
 
-getWeatherData2()
+Consumer().start()
