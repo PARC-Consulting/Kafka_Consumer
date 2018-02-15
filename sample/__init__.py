@@ -1,4 +1,4 @@
-from core import getWeatherData
+from core import getWeatherData2
 
 
-getWeatherData("08540","US")
+getWeatherData2()
